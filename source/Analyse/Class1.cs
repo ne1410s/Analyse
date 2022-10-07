@@ -6,11 +6,13 @@
     public class Class1
     {
         /// <summary>
-        /// Adds two numbers.
+        /// A funny string.
         /// </summary>
-        /// <param name="n1">The first number.</param>
-        /// <param name="n2">The second number.</param>
-        /// <returns>The sum.</returns>
+        public const string Bilbo = "Baggins";
+
+        /// <summary>
+        /// Sommat.
+        /// </summary>
         public int Add(int n1, int n2) => n1 + n2;
     }
 }

@@ -6,7 +6,9 @@
     <Description>Delivers opinionated, Roslyn-based static code analysis</Description>
     <PackageTags>Roslyn analysis static code analyzer</PackageTags>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <IncludeSymbols>True</IncludeSymbols>
+    <IncludeBuildOutput>False</IncludeBuildOutput>
+    <IncludeSymbols>False</IncludeSymbols>
+    <NoPackageAnalysis>True</NoPackageAnalysis>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/ne1410s/Analyse</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -26,6 +28,7 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
   </ItemGroup>
 
   <ItemGroup>
@@ -41,6 +44,20 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="tools\install.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Pack>True</Pack>
+      <PackagePath>tools</PackagePath>
+    </None>
+    <None Update="tools\uninstall.ps1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Pack>True</Pack>
+      <PackagePath>tools</PackagePath>
+    </None>
+    <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
   </ItemGroup>
 
 </Project>
