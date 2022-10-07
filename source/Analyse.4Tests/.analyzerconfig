@@ -1,0 +1,16 @@
+﻿# Global AnalyzerConfig file
+is_global = true
+
+roslynator.max_line_length = 100
+
+dotnet_diagnostic.CA1707.severity = none
+dotnet_diagnostic.CS1591.severity = none
+
+dotnet_diagnostic.RCS0056.severity = warning
+dotnet_diagnostic.RCS1036.severity = error
+
+dotnet_diagnostic.SA1028.severity = warning
+dotnet_diagnostic.SA1310.severity = none
+dotnet_diagnostic.SA1400.severity = error
+dotnet_diagnostic.SA1502.severity = none
+dotnet_diagnostic.SA1600.severity = none
