@@ -1,4 +1,4 @@
-﻿namespace DemoLibrary.Tests
+﻿namespace Analyse.Tests
 {
     /// <summary>
     /// Tests for the <see cref="Class1"/> class.

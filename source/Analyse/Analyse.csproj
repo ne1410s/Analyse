@@ -3,14 +3,14 @@
   <PropertyGroup>
     <Authors>Paul Jones</Authors>
     <Company>ne1410s</Company>
-    <Description>DESCRIPTION HERE</Description>
-    <PackageTags>PACKAGE_TAGS_HERE</PackageTags>
+    <Description>Delivers opinionated, Roslyn-based static code analysis</Description>
+    <PackageTags>Roslyn analysis static code analyzer</PackageTags>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <IncludeSymbols>True</IncludeSymbols>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageProjectUrl>https://github.com/ne1410s/DemoLibrary</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/ne1410s/Analyse</PackageProjectUrl>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/ne1410s/DemoLibrary</RepositoryUrl>
+    <RepositoryUrl>https://github.com/ne1410s/Analyse</RepositoryUrl>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Title>$(AssemblyName)</Title>

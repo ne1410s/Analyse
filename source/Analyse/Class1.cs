@@ -1,4 +1,4 @@
-﻿namespace DemoLibrary
+﻿namespace Analyse
 {
     /// <summary>
     /// A class.
