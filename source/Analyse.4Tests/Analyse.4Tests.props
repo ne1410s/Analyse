@@ -16,7 +16,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <AdditionalFiles Include="$(MSBuildThisFileDirectory)..\content\stylecop.json" Visible="false" />
+    <AdditionalFiles Include="$(MSBuildThisFileDirectory)..\content\stylecop.json" />
     <GlobalAnalyzerConfigFiles Include="$(MSBuildThisFileDirectory)..\content\.analyzerconfig" />
   </ItemGroup>
 
