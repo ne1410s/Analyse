@@ -6,15 +6,16 @@ roslynator_max_line_length = 120
 
 dotnet_diagnostic.CA1822.severity = suggestion
 dotnet_diagnostic.CS1591.severity = error
+dotnet_diagnostic.IDE0005.severity = warning
 dotnet_diagnostic.RCS0056.severity = warning
 dotnet_diagnostic.RCS1036.severity = error
 dotnet_diagnostic.RCS1118.severity = warning
 dotnet_diagnostic.RCS1194.severity = suggestion
 dotnet_diagnostic.RCS1214.severity = warning
-dotnet_diagnostic.SA1028.severity = warning
 dotnet_diagnostic.SA1000.severity = none
 dotnet_diagnostic.SA1009.severity = none
 dotnet_diagnostic.SA1011.severity = none
+dotnet_diagnostic.SA1028.severity = warning
 dotnet_diagnostic.SA1118.severity = suggestion
 dotnet_diagnostic.SA1310.severity = none
 dotnet_diagnostic.SA1400.severity = error
