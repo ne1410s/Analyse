@@ -5,7 +5,7 @@ csharp_style_expression_bodied_methods = when_on_single_line
 roslynator_max_line_length = 120
 
 dotnet_diagnostic.CA1822.severity = suggestion
-# dotnet_diagnostic.CS1591.severity = error
+dotnet_diagnostic.CS1591.severity = error
 dotnet_diagnostic.IDE0005.severity = warning
 dotnet_diagnostic.RCS0056.severity = warning
 dotnet_diagnostic.RCS1036.severity = error
@@ -20,7 +20,8 @@ dotnet_diagnostic.SA1118.severity = suggestion
 dotnet_diagnostic.SA1310.severity = none
 dotnet_diagnostic.SA1400.severity = error
 dotnet_diagnostic.SA1502.severity = none
-# dotnet_diagnostic.SA1600.severity = error
+dotnet_diagnostic.SA1600.severity = error
+dotnet_diagnostic.S3871.severity = none
 
 # test variants
 dotnet_diagnostic.CA1707.severity = none

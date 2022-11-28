@@ -24,16 +24,18 @@
     <None Include="..\..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
+      <Visible>False</Visible>
     </None>
     <None Include="..\..\LICENSE">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
+      <Visible>False</Visible>
     </None>
   </ItemGroup>
 
   <ItemGroup>
     <None Include="Analyse.props" Pack="true" PackagePath="build" />
-    <None Include="stylecop.json" Pack="true" PackagePath="content" />
+    <None Include="../stylecop.json" Pack="true" PackagePath="content" />
     <Content Include=".analyzerconfig" Pack="true" PackagePath="content" />
   </ItemGroup>
   
