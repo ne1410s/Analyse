@@ -36,7 +36,8 @@
   <ItemGroup>
     <None Include="Analyse.4Tests.props" Pack="true" PackagePath="build" />
     <None Include="../stylecop.json" Pack="true" PackagePath="content" />
-    <Content Include=".analyzerconfig" Pack="true" PackagePath="content" />
+    <Content Include="../.analyzerconfig" Pack="true" PackagePath="content" />
+    <Content Include=".analyzerconfig4tests" Pack="true" PackagePath="content" />
   </ItemGroup>
   
 </Project>

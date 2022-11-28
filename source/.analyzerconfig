@@ -1,5 +1,6 @@
 ﻿# Global AnalyzerConfig file
 is_global = true
+global_level = 100
 
 csharp_style_expression_bodied_methods = when_on_single_line
 roslynator_max_line_length = 120
@@ -22,9 +23,3 @@ dotnet_diagnostic.SA1400.severity = error
 dotnet_diagnostic.SA1502.severity = none
 dotnet_diagnostic.SA1600.severity = error
 dotnet_diagnostic.S3871.severity = none
-
-# test variants
-dotnet_diagnostic.CA1707.severity = none
-dotnet_diagnostic.CS1591.severity = none
-dotnet_diagnostic.SA1200.severity = none
-dotnet_diagnostic.SA1600.severity = none
