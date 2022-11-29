@@ -34,5 +34,6 @@ dotnet_diagnostic.SA1310.severity = none
 dotnet_diagnostic.SA1400.severity = error
 dotnet_diagnostic.SA1502.severity = none
 dotnet_diagnostic.SA1600.severity = error
+dotnet_diagnostic.S2114.severity = warning
 dotnet_diagnostic.S3871.severity = none
 dotnet_diagnostic.S3925.severity = suggestion
