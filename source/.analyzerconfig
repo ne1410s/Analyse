@@ -10,6 +10,7 @@ dotnet_diagnostic.CA1014.severity = none
 dotnet_diagnostic.CA1030.severity = suggestion
 dotnet_diagnostic.CA1031.severity = warning
 dotnet_diagnostic.CA1032.severity = suggestion
+dotnet_diagnostic.CA1050.severity = warning
 dotnet_diagnostic.CA1054.severity = suggestion
 dotnet_diagnostic.CA1056.severity = suggestion
 dotnet_diagnostic.CA1062.severity = warning
