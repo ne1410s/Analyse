@@ -3,15 +3,15 @@
   
   <PropertyGroup>
     <AnalysisLevel>latest</AnalysisLevel>
-    <AnalysisMode>recommended</AnalysisMode>
+    <AnalysisMode>all</AnalysisMode>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
     <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <AdditionalFiles Include="$(MSBuildThisFileDirectory)..\content\stylecop.json" Visible="false" />
-    <AdditionalFiles Include="$(MSBuildThisFileDirectory)..\content\*.globalconfig" Visible="false" />
+    <AdditionalFiles Include="$(MSBuildThisFileDirectory)../content/stylecop.json" Visible="false" />
+    <GlobalAnalyzerConfigFiles Include="$(MSBuildThisFileDirectory)../content/*.globalconfig" />
   </ItemGroup>
 
   <ItemGroup>
