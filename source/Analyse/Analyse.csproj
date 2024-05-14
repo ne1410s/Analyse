@@ -10,6 +10,7 @@
     <IncludeBuildOutput>False</IncludeBuildOutput>
     <IncludeSymbols>False</IncludeSymbols>
     <NoPackageAnalysis>True</NoPackageAnalysis>
+    <PackageId>ne1410s.$(AssemblyName)</PackageId>
     <PackageIcon>ICON.png</PackageIcon>
     <PackageIconUrl>ICON.png</PackageIconUrl>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
