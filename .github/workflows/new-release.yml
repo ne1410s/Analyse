@@ -17,6 +17,16 @@ jobs:
     - uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
+    - name: Pack and Publish
+      env:
+        READ_REPO_PACKAGES: ${{ secrets.READ_REPO_PACKAGES }}
+      run: |
+        vversion=${{ github.ref_name }}
+        cd ./source
+        dotnet nuget add source "https://nuget.pkg.github.com/ne1410s/index.json" --name ne1410s --username ne1410s --password "${{ env.READ_REPO_PACKAGES }}" --store-password-in-clear-text
+        dotnet pack -c Release -o ${{ runner.temp }}/nu -p:Version=${vversion:1}
+        echo "skipping push to github feed ..."
+        #dotnet nuget push ${{ runner.temp }}/nu/*.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} --source "https://nuget.pkg.github.com/ne1410s/index.json"
     - name: Increment patch (if stable release)
       run: |
         if [[ ${{ github.ref_name }} =~ ^v([0-9]+\.[0-9]+\.)([0-9]+)$ ]]
@@ -34,17 +44,4 @@ jobs:
         else
           echo "Skipping patch increment. ${{ github.ref_name }} is not a stable release version."
         fi
-    - name: Pack and Publish
-      env:
-        READ_REPO_PACKAGES: ${{ secrets.READ_REPO_PACKAGES }}
-      run: |
-        vversion=${{ github.ref_name }}
-        shopt -s extglob
-        for file in "./source/**/!(*.Test*(s)|*.UnitTest*(s)).csproj"; do
-          sed "s#<PackageId>ne1410s#<PackageId>github#" $file -i
-        done
-        cd ./source
-        dotnet nuget add source "https://nuget.pkg.github.com/ne1410s/index.json" --name ne1410s --username ne1410s --password "${{ env.READ_REPO_PACKAGES }}" --store-password-in-clear-text
-        dotnet pack -c Release -o ${{ runner.temp }}/nu -p:Version=${vversion:1}
-        dotnet nuget push ${{ runner.temp }}/nu/*.nupkg --api-key ${{ secrets.GITHUB_TOKEN }} --source "https://nuget.pkg.github.com/ne1410s/index.json"
-
+    
