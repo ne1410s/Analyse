@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="../README.md" />
+    <File Path="Analyse.globalconfig" />
+    <File Path="stylecop.json" />
+  </Folder>
+  <Project Path="Analyse.4Tests/Analyse.4Tests.csproj" />
+  <Project Path="Analyse/Analyse.csproj" />
+</Solution>
